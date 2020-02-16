@@ -6,7 +6,26 @@ function addition() {
 
         if (nbr2 >= 0) {
 
-            var resultat = alert(Number(nbr1) + Number(nbr2));
+            var addnbr1 = prompt('Voulez-vous ajouter un autre nombre à calculer ? Oui (o), Non (n)');
+
+            if (addnbr1 == 'O' || addnbr1 == 'o') {
+
+                nbradded1 = prompt('Choisisez un troisième nombre :');
+
+                if (nbradded1 >= 0) {
+
+                    var resultat = alert(Number(nbr1) + Number(nbr2) + Number(nbradded1));
+
+                } else {
+
+                    alert('Le troisième facteur est erroné');
+
+                }
+
+            } else {
+
+                var resultat = alert(Number(nbr1) + Number(nbr2));
+            }
 
         } else {
 
@@ -29,7 +48,27 @@ function soustraction() {
 
         if (nbr4 >= 0) {
 
-            var resultat2 = alert(Number(nbr3) - Number(nbr4));
+            var addnbr2 = prompt('Voulez-vous ajouter un autre nombre à calculer ? Oui (o), Non (n)');
+
+            if (addnbr2 == 'o' || addnbr2 == 'O') {
+
+                var nbradded2 = prompt('Choisisez un troisième nombre :');
+
+                if (nbradded2 >= 0) {
+
+                    var resultat2 = alert(Number(nbr3) - Number(nbr4) - Number(nbradded2));
+
+                } else {
+
+                    alert('Le troisième facteur est erroné');
+
+                }
+
+            } else {
+
+                var resultat2 = alert(Number(nbr3) - Number(nbr4));
+
+            }
 
         } else {
 
@@ -52,7 +91,27 @@ function multiplication() {
 
         if (nbr6 >= 0) {
 
-            var resultat3 = alert(Number(nbr5) * Number(nbr6));
+            var addnbr3 = prompt('Voulez-vous ajouter un autre nombre à calculer ? Oui (o), Non (n)');
+
+            if (addnbr3 == 'o' || addnbr3 == 'O') {
+
+                var nbradded3 = prompt('Choisissez un troisième nombre :');
+
+                if (nbradded3 >= 0) {
+
+                    var resultat3 = alert(Number(nbr5) * Number(nbr6) * Number(nbradded3));
+
+                } else {
+
+                    alert('Le troisième nombre est erroné');
+
+                }
+
+            } else {
+
+                var resultat3 = alert(Number(nbr5) * Number(nbr6));
+
+            }
 
         } else {
 
@@ -75,8 +134,29 @@ function division() {
 
         if (nbr8 >= 0) {
 
-            var resultat4 = alert(Number(nbr7) / Number(nbr8));
-            var reste = alert('Reste : ' + Number(nbr7) % Number(nbr8));
+            var addnbr4 = prompt('Voulez-vous ajouter un autre nombre à calculer ? Oui (o), Non (n)');
+
+            if (addnbr4 == 'o' || addnbr4 == 'O') {
+
+                var nbradded4 = prompt('Choisissez un troisième nombre :');
+
+                if (nbradded4 >= 0) {
+
+                    var resultat4 = alert(Number(nbr7) / Number(nbr8) / Number(nbradded4));
+                    var reste = alert('Reste : ' + Number(nbr7) % Number(nbr8) % Number(nbradded4));
+
+                } else {
+
+                    alert('Le troisième facteur est erroné');
+
+                }
+
+            } else {
+
+                var resultat4 = alert(Number(nbr7) / Number(nbr8));
+                var reste = alert('Reste : ' + Number(nbr7) % Number(nbr8));
+
+            }
 
         } else {
 
